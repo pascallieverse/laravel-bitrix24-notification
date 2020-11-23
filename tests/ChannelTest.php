@@ -4,6 +4,7 @@ namespace PascalLieverse\Bitrix24\Tests;
 
 use PascalLieverse\Bitrix24\Api\Bitrix24;
 use PascalLieverse\Bitrix24\Bitrix24Channel;
+use PascalLieverse\Bitrix24\Bitrix24Notifiable;
 use PascalLieverse\Bitrix24\Bitrix24Message;
 use Mockery;
 use PHPUnit\Framework\TestCase;
@@ -34,7 +35,7 @@ class ChannelTest extends TestCase
 			'MESSAGE' => 'message'
 		])->once();
 
-		$this->channel->send('1', new TestNotification());
+		$this->channel->send(new Bitrix24Notifiable('1'), new TestNotification());
 
 
 	}
