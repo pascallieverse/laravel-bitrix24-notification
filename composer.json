@@ -1,0 +1,41 @@
+{
+  "name": "pascallieverse/laravel-bitrix24-notification",
+  "description": "Package for Laravel notifications to Bitrix24",
+  "keywords": ["laravel", "notification", "Bitrix24"],
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pascal Lieverse",
+      "email": "pascallieverse@live.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "illuminate/notifications": "^8.0",
+    "illuminate/support": "^8.0",
+    "illuminate/queue": "^8.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.3.1",
+    "phpunit/phpunit": "^9.3"
+  },
+  "autoload": {
+    "classmap": [],
+    "psr-4": {
+      "PascalLieverse\\Bitrix24\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PascalLieverse\\Bitrix24\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PascalLieverse\\Bitrix24\\Bitrix24ServiceProvider"
+      ]
+    }
+  }
+}
