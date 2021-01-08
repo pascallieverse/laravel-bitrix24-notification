@@ -2,7 +2,7 @@
 
 namespace PascalLieverse\Bitrix24;
 
-use PascalLieverse\Bitrix24\api\Bitrix24;
+use PascalLieverse\Bitrix24\Api\Bitrix24;
 use PascalLieverse\Bitrix24\Exceptions\Bitrix24Exception;
 use Illuminate\Notifications\Notification;
 
