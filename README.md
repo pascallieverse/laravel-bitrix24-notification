@@ -12,16 +12,6 @@ You can install the package via composer:
 composer require "pascallieverse/laravel-bitrix24-notification"
 ```
 
-Next, you must load the service provider:
-
-```php
-// config/app.php
-'providers' => [
-    // ...
-    PascalLieverse\Bitrix24\Bitrix24ServiceProvider::class,
-],
-```
-
 And finally publish the config file:
 
 ```php
@@ -46,7 +36,7 @@ Now you can create a simple notification as follows:
 namespace App\Notifications;
 
 use Illuminate\Notifications\Notification;
-use PascalLieverse\Bitrix24\Bitrix24Notifiable;
+use PascalLieverse\Bitrix24\Bitrix24Channel;
 use PascalLieverse\Bitrix24\Bitrix24Message;
 
 class BitrixNotice extends Notification
@@ -67,7 +57,7 @@ class BitrixNotice extends Notification
      */
     public function via($notifiable)
     {
-        return [Bitrix24Notifiable::class];
+        return [Bitrix24Channel::class];
     }
 
     /**
