@@ -12,13 +12,13 @@
   ],
   "require": {
     "php": "^8.0.1",
-    "illuminate/notifications": "^9.0",
-    "illuminate/support": "^9.0",
-    "illuminate/queue": "^9.0"
+    "illuminate/notifications": "^9.0|^10.0",
+    "illuminate/support": "^9.0|^10.0",
+    "illuminate/queue": "^9.0|^10.0"
   },
   "require-dev": {
     "mockery/mockery": "^1.5",
-    "phpunit/phpunit": "^9.5"
+    "phpunit/phpunit": "^10"
   },
   "autoload": {
     "classmap": [],
